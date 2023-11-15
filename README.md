@@ -1,37 +1,26 @@
-# 2023 Video Game Ranking
+# Movie-Tracker-Full-Stack
 
-Welcome to my 2023 Video Game Ranking project! This web application allows users to rank their favorite video games of the year, vote for top choices, and create personalized favorites lists.
+Welcome to My Awesome Project, a movie tracking application that empowers users to manage their movie watchlist seamlessly.
 
-**Link to Project:** 
+Project Screenshot
 
-**Screenshot:**
-![Project Screenshot](path/to/screenshot.png)
 
 ## How It's Made
 
-### Tech Stack
-- **HTML, CSS, JavaScript:** The foundation of the frontend is built using HTML for structure, CSS for styling, and JavaScript for interactivity, creating a visually appealing and responsive user interface.
+** Technologies Used: HTML, CSS, JavaScript, EJS, Node.js, MongoDB
 
-- **Node.js:** The backend is powered by Node.js, providing a robust and efficient server-side environment.
+### Project Overview
+I built this movie tracking application to provide users with a simple and intuitive way to organize their movie preferences. Users can easily add movies to their "To Watch" list and dynamically update the status of each movie using the "watched," "watching," or "dropped" buttons/icons.
 
-- **EJS:** EJS is used as the templating engine to dynamically generate HTML content on the server side, facilitating the rendering of dynamic views.
+### Implementation Details
+The front end is crafted with HTML, CSS, and JavaScript, while EJS templates enhance the dynamic rendering of movie data. Node.js powers the backend, and MongoDB serves as the database to store user movie lists and statuses.
 
-- **MongoDB:** CRUD functionality is implemented with MongoDB, enabling users to add, retrieve, update, and delete their favorite video games.
+One of the challenges I faced during development was efficiently shifting movie items between lists without duplication. Through careful debugging and refining, I successfully implemented a solution that ensures a seamless transition of movies between different user-defined categories.
 
-### Building Process
-
-I started by designing a user-friendly interface using HTML and CSS, ensuring a seamless experience for frontend users. JavaScript was then employed to add interactive features, allowing users to rank games, vote, and manage their favorites.
-
-On the backend, Node.js served as the foundation, handling server-side logic and communication with the MongoDB database. EJS templates were used to generate dynamic HTML content, providing a personalized and responsive user experience.
-
-## Optimizations (Optional)
-
-Throughout the development process, I focused on optimizing performance to deliver a fast and efficient application. Examples of optimizations include refining database queries for faster data retrieval and implementing client-side caching for improved responsiveness.
 
 ## Lessons Learned
 
-Building this video game ranking project provided valuable insights into frontend development, backend integration, and database management. Overcoming challenges, such as implementing CRUD functionality and ensuring a smooth user experience, highlighted the importance of meticulous planning and continuous learning.
-
+One of the challenges I faced during development was efficiently shifting movie items between lists without duplication. Through careful debugging and refining, I successfully implemented a solution that ensures a seamless transition of movies between different user-defined categories.
 
 ## Installation
 
@@ -41,6 +30,5 @@ Building this video game ranking project provided valuable insights into fronten
 ## Usage
 
 1. run `npm run savage`
-2. Navigate to `localhost:3000`
+2. Navigate to `localhost:4545`
 
-# Movie-Tracker-Full-Stack
