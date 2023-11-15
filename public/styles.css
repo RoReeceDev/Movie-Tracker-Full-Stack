@@ -1,0 +1,170 @@
+*{
+  box-sizing: border-box;
+  font-family: 'ubuntu Mono', Arial, Helvetica, sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: rgb(58, 77, 57);
+  color: white;
+}
+h3{
+  margin-top: 40px;
+}
+
+img{
+  width: 80%
+}
+
+ul{
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+
+li{
+  width: 100%;
+  border: 2px solid rgb(25, 33, 35);
+  margin: 10px 0%;
+  background-color: rgb(79, 111, 82);
+  color: white;
+}
+
+
+
+li div{
+  display: inline-block;
+  height: auto;
+}
+
+section{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+  max-height: 700px;
+}
+
+h2{
+  margin: 1%;
+}
+
+
+.img-cont{
+  display: inline-block;
+  width: 25%;
+}
+
+.info-cont{
+  display: inline-block;
+  width: 60%;
+  text-align: center;
+}
+
+.info-cont span{
+  color: rgb(254, 205, 166);
+  font-size: 1.6rem;
+
+}
+
+h4{
+  font-size: 1.6rem;
+  margin:1.5%;
+}
+
+
+
+.rating-cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color:rgb(115, 144, 114) ;
+  margin-top: 5px;
+}
+
+.movie-list{
+  width: 24%;
+  max-height: 700px;
+  margin-top: 5px;
+  background-color:rgb(236, 227, 206) ;
+  border-radius: 15px;
+  margin-top: 15px; 
+  overflow: auto;
+}
+
+.star-color{
+  color:gold;
+}
+
+.add-movie{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-info{
+  width: 90%;
+  text-align: center;
+}
+.movie-info input{
+  margin: 0.5%;
+  border-radius: 15px;
+  padding: 0px 1%;
+  font-size: 1.7rem;
+}
+
+.main-desc{
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+.movie-info button{
+  border-radius: 15px;
+  padding: 0px 1%;
+  font-size: 1.5rem;
+  width: 7%;
+}
+
+.main-title, .title, .studio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  font-size: 2.2rem;
+  margin: 2.5%;
+}
+
+.main-title h1{
+  font-size: 4.5rem;  
+}
+
+.studio{
+  font-size: 1.7rem;
+  margin: 0;
+
+}
+
+
+.list-titles{
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.movies, .movie{
+  padding: 2%;
+}
+
+.movie{
+  width: 100%;
+}
+
+.movie, .rating-cont{
+  border-radius: 15px;
+  padding: 1%;
+  font-size: 1.3rem;
+}
