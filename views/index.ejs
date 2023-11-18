@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <title>Movie Watch List</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
   <!-- <link rel="shortcut icon" href="favicon.ico">-->
   <link rel="stylesheet" href="font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
@@ -17,7 +18,8 @@
   <!-- Title  -->
   <div class="main-title">
     <h1>Movie Watch List</h1>
-    <h2 class="main-desc">Add a movie to the "To Watch" list and move the movie between each list based on status. Either you watched the movie, your watching it, you dropped it or you want to watch it!</h2>
+    <h2 class="main-desc">Add a movie to the "To Watch" list and move the movie between each list based on status.
+      Either you watched the movie, your watching it, you dropped it or you want to watch it!</h2>
   </div>
 
   <!-- Add a Game to List -->
@@ -32,7 +34,7 @@
       <button type="submit">Submit</button>
     </form>
   </div>
-  
+
 
 
   <section>
@@ -41,34 +43,37 @@
       <ul class="movies">
         <% for(var i=0; i<movies.length; i++) {%>
           <% if (movies[i].toWatch===true) { %>
-          <li class="movie">
-            <div class="img-cont"><img src="<%= movies[i].coverImg %>" /></div>
-            <div class="info-cont">
-              <h2 class="title">
-                <%= movies[i].title %>
-              </h2>
-              <span>Director:</span>
-              <h4 class="director">
-                <%= movies[i].director%>
-              </h4>
-              <span>Where to Watch:</span>
-              <h4 class="stream">
-                <%= movies[i].stream%>
-              </h4>
-              <span>Released:</span>
-              <h4 class="releaseYear">
-                <%= movies[i].releaseYear %>
-              </h4>
-            </div>
-            <div class="rating-cont">
-              <span class="upvote"><i class=" fa fa-solid fa-eye" aria-hidden="true" data-id="<%= movies[i]._id %>"></i> Watching </span>
-              <span class="upvote"><i class=" fa fa-solid fa-eye-slash" aria-hidden="true" data-id="<%= movies[i]._id %>"></i> Watched</span>
-              <span><i class="fa fa-solid fa-eyedropper" aria-hidden="true" data-id="<%= movies[i]._id %>" ></i> Dropped</span>
-              <span><i class="fa fa-solid fa-trash" aria-hidden="true" data-id="<%= movies[i]._id %>" ></i></span>
-            </div>
-          </li>
-          <% } %>
-          <% } %>
+            <li class="movie">
+              <div class="img-cont"><img src="<%= movies[i].coverImg %>" /></div>
+              <div class="info-cont">
+                <h2 class="title">
+                  <%= movies[i].title %>
+                </h2>
+                <span>Director:</span>
+                <h4 class="director">
+                  <%= movies[i].director%>
+                </h4>
+                <span>Where to Watch:</span>
+                <h4 class="stream">
+                  <%= movies[i].stream%>
+                </h4>
+                <span>Released:</span>
+                <h4 class="releaseYear">
+                  <%= movies[i].releaseYear %>
+                </h4>
+              </div>
+              <div class="rating-cont">
+                <span class="upvote"><i class=" fa fa-solid fa-eye" aria-hidden="true"
+                    data-id="<%= movies[i]._id %>"></i> Watching </span>
+                <span class="upvote"><i class=" fa fa-solid fa-eye-slash" aria-hidden="true"
+                    data-id="<%= movies[i]._id %>"></i> Watched</span>
+                <span><i class="fa fa-solid fa-eyedropper" aria-hidden="true" data-id="<%= movies[i]._id %>"></i>
+                  Dropped</span>
+                <span><i class="fa fa-solid fa-trash" aria-hidden="true" data-id="<%= movies[i]._id %>"></i></span>
+              </div>
+            </li>
+            <% } %>
+              <% } %>
       </ul>
     </div>
     <div class="movie-list">
@@ -96,10 +101,13 @@
                 </h4>
               </div>
               <div class="rating-cont">
-                <span class="upvote"><i class=" fa fa-solid fa-eye" aria-hidden="true" data-id="<%= movies[i]._id %>"></i> Watching </span>
-                <span class="upvote"><i class=" fa fa-solid fa-eye-slash" aria-hidden="true" data-id="<%= movies[i]._id %>"></i> Watched</span>
-                <span><i class="fa fa-solid fa-eyedropper" aria-hidden="true" data-id="<%= movies[i]._id %>" ></i> Dropped</span>
-                <span><i class="fa fa-solid fa-trash" aria-hidden="true" data-id="<%= movies[i]._id %>" ></i></span>
+                <span class="upvote"><i class=" fa fa-solid fa-eye" aria-hidden="true"
+                    data-id="<%= movies[i]._id %>"></i> Watching </span>
+                <span class="upvote"><i class=" fa fa-solid fa-eye-slash" aria-hidden="true"
+                    data-id="<%= movies[i]._id %>"></i> Watched</span>
+                <span><i class="fa fa-solid fa-eyedropper" aria-hidden="true" data-id="<%= movies[i]._id %>"></i>
+                  Dropped</span>
+                <span><i class="fa fa-solid fa-trash" aria-hidden="true" data-id="<%= movies[i]._id %>"></i></span>
               </div>
             </li>
             <% } %>
@@ -131,10 +139,13 @@
                 </h4>
               </div>
               <div class="rating-cont">
-                <span class="upvote"><i class=" fa fa-solid fa-eye" aria-hidden="true" data-id="<%= movies[i]._id %>"></i> Watching </span>
-                <span class="upvote"><i class=" fa fa-solid fa-eye-slash" aria-hidden="true" data-id="<%= movies[i]._id %>"></i> Watched</span>
-                <span><i class="fa fa-solid fa-eyedropper" aria-hidden="true" data-id="<%= movies[i]._id %>" ></i> Dropped</span>
-                <span><i class="fa fa-solid fa-trash" aria-hidden="true" data-id="<%= movies[i]._id %>" ></i></span>
+                <span class="upvote"><i class=" fa fa-solid fa-eye" aria-hidden="true"
+                    data-id="<%= movies[i]._id %>"></i> Watching </span>
+                <span class="upvote"><i class=" fa fa-solid fa-eye-slash" aria-hidden="true"
+                    data-id="<%= movies[i]._id %>"></i> Watched</span>
+                <span><i class="fa fa-solid fa-eyedropper" aria-hidden="true" data-id="<%= movies[i]._id %>"></i>
+                  Dropped</span>
+                <span><i class="fa fa-solid fa-trash" aria-hidden="true" data-id="<%= movies[i]._id %>"></i></span>
               </div>
             </li>
             <% } %>
@@ -166,10 +177,13 @@
                 </h4>
               </div>
               <div class="rating-cont">
-                <span class="upvote"><i class=" fa fa-solid fa-eye" aria-hidden="true" data-id="<%= movies[i]._id %>"></i> Watching </span>
-                <span class="upvote"><i class=" fa fa-solid fa-eye-slash" aria-hidden="true" data-id="<%= movies[i]._id %>"></i> Watched</span>
-                <span><i class="fa fa-solid fa-eyedropper" aria-hidden="true" data-id="<%= movies[i]._id %>" ></i> Dropped</span>
-                <span><i class="fa fa-solid fa-trash" aria-hidden="true" data-id="<%= movies[i]._id %>" ></i></span>
+                <span class="upvote"><i class=" fa fa-solid fa-eye" aria-hidden="true"
+                    data-id="<%= movies[i]._id %>"></i> Watching </span>
+                <span class="upvote"><i class=" fa fa-solid fa-eye-slash" aria-hidden="true"
+                    data-id="<%= movies[i]._id %>"></i> Watched</span>
+                <span><i class="fa fa-solid fa-eyedropper" aria-hidden="true" data-id="<%= movies[i]._id %>"></i>
+                  Dropped</span>
+                <span><i class="fa fa-solid fa-trash" aria-hidden="true" data-id="<%= movies[i]._id %>"></i></span>
               </div>
             </li>
             <% } %>

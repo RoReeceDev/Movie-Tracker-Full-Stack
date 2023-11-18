@@ -1,6 +1,6 @@
 # Movie-Tracker-Full-Stack
 
-Welcome to My Awesome Project, a movie tracking application that empowers users to manage their movie watchlist seamlessly.
+Welcome to my movie tracking application that empowers users to manage their movie watchlist seamlessly.
 
 ![Movie Tracker Gif](public/img/movietracks.gif)
 
