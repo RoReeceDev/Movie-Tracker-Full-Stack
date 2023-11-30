@@ -3,13 +3,13 @@ const app = express()
 const bodyParser = require('body-parser');
 const { ObjectID } = require('bson');
 const MongoClient = require('mongodb').MongoClient
-
+const PORT = process.env.PORT || 4545
 var db, collection;
 
 const url = "mongodb+srv://roreecedev:moviedev@cluster4.4svoooe.mongodb.net/MovieRankings?retryWrites=true&w=majority";
 const dbName = "MovieRankings";
 
-app.listen(4545, () => {
+app.listen(PORT, "0.0.0.0", () => {
   MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, (error, client) => {
     if (error) {
       throw error;
