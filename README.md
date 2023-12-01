@@ -2,6 +2,10 @@
 
 Welcome to my movie tracking application that empowers users to manage their movie watchlist seamlessly.
 
+**Link to Project:**
+
+https://movie-tracker.up.railway.app/
+
 ![Movie Tracker Gif](public/img/movietracks.gif)
 
 
